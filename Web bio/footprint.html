@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Экологический След - Расчет</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="nav">
+        <h1>Экологический След</h1>
+        <ul>
+            <li><a href="register.html">Регистрация</a></li>
+            <li><a href="footprint.html"><img src="icons/footprint.png" alt="Экологический след">Расчет следа</a></li>
+            <li><a href="profile.html"><img src="icons/profile.png" alt="Профиль">Профиль</a></li>
+            <li><a href="videos.html"><img src="icons/videos.png" alt="Видео">Видео</a></li>
+            <li><a href="achievements.html"><img src="icons/achievements.png" alt="Достижения">Достижения</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <h2>Расчет вашего экологического следа</h2>
+        <form id="ecoFootprintForm">
+            <label for="electricity">Потребление электроэнергии (кВтч в месяц):</label>
+            <input type="number" id="electricity" required>
+
+            <label for="water">Потребление воды (л в месяц):</label>
+            <input type="number" id="water" required>
+
+            <label for="gas">Потребление газа (м³ в месяц):</label>
+            <input type="number" id="gas" required>
+
+            <button type="submit">Рассчитать</button>
+        </form>
+
+        <div id="result" class="result"></div>
+        <div id="tips" class="tips"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
